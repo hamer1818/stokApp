@@ -130,7 +130,7 @@ export default function App() {
       <FlatList
         data={products}
         renderItem={({ item, index }) => (
-          // console.log(item),
+          console.log(item),
           <ProductItem item={item} onDelete={() => deleteProduct(index)} />
         )}
         keyExtractor={(item, index) => index.toString()}
